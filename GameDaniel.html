@@ -7,13 +7,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="DanielPagina.css"/>
 </head>
-<body>
+<body onkeydown="getKeyAndMove(event)" onkeyup="moveClear()"
+onload="startGame()">
     <header>
-        <ul class="navigation-list">
-          <li class="navigation-item"><a href="#">Posts</a></li>
-          <li class="navigation-item"><a href="#">Products</a></li>
-          <li class="navigation-item"><a href="#">About Us</a></li>
-        </ul>
+      <ul class="navigation-list">
+        <li class="navigation-item"><a href="#">home</a></li>
+      </ul>
       </header>
       <aside>
         <ul class="navigation-list-side">
@@ -26,7 +25,6 @@
       <main>
         <h1>Game</h1>
         <p>Dit is mijn game</p>
-  
         <section class="card-container">
             <article class="card">
               <canvas id="mijnCanvas" width="900" height="480" style="border: 10px solid rgb(255, 255, 255)"></canvas>
